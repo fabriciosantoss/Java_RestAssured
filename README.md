@@ -1,12 +1,28 @@
 # Radiam Task
 
-Hello folks, here i will talk about the project and how you can execute it
+Hello folks, find below how you can setup and execute the project
 
 <h1>Eviroment</h1>
-First of all, to build and run my project, you should have any requirements installed:</p>
+First of all, to build and run my project, you should have following tools installed:</p>
 <p>Java 17 Amazon Coretto</p>
 <p>Maven</p>
 <p>Git</p>
 
 <h1>Running the tests</h1>
 For running the tests you will need execute local in your computer, the project <a href="https://bitbucket.org/thiagohcn/customer-data-api-java/src/master/"> customer-data-api-java </a>. After that you should clone my project, acess the file src/main/java/tests/AccountTest.java, and execute it.
+
+In the project have a file to CI/CD, but how it is running local, its not working yet.
+
+<h1>API Documentation</h1>
+You could add more informations about the API, for exemple insert the complete endpoint, the correct account's endpoint is "account/v1/accounts" but in the documentatios is mentioned "accounts", so in the first view is a little bite confuse.
+
+<h1>Bugs</h1>
+
+<h3>documentation</h2>
+  - The Wrong path of the account's endpoint-> the correct account's endpoint is "account/v1/accounts" but in the documentatios is mentioned "accounts", This is a bug with priority medium, because this is more easy and simple to be resolved </br>
+
+<h3>Functionality</h2> 
+- Error 500 when i use one expired date -> When i use a consetID with a expired date to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID
+
+<br>- Error 500 when i use consent with status rejected-> When i use a consetID with the rejected status to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID</br>
+
