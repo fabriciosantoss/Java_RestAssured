@@ -21,8 +21,27 @@ You could add more informations about the API, for exemple insert the complete e
 <h3>documentation</h2>
   - The Wrong path of the account's endpoint-> the correct account's endpoint is "account/v1/accounts" but in the documentatios is mentioned "accounts", This is a bug with priority medium, because this is more easy and simple to be resolved </br>
 
-<h3>Functionality</h2> 
+<h3>Functionality</h3> 
 - Error 500 when i use one expired date -> When i use a consetID with a expired date to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID
 
 <br>- Error 500 when i use consent with status rejected-> When i use a consetID with the rejected status to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID</br>
+
+
+<h1>Security Test PLan</h1>
+<h3>Try acess with expired consent</h3> 
+<b>Given</b> you have a consentID with expired date</p>
+<b>When</b>  you try acess a account with this consentID</p>
+<b>Then you</b>  won't have acess</p>
+
+<h3>try acess with consent rejected</h3> 
+<b>Given</b> you have a consentID with status rejected</p>
+<b>When</b> you try acess a account with this consentID</p>
+Then you won't have acess</p>
+
+<h3>Try acess with ConsentID invalid</h3> 
+<b>Given</b> you have a consentID with a another partern</p>
+<b>When</b> you try acess a account with this consentID</p>
+<b>Then you</b> you won't have acess</p>
+
+<br>An improvement to the API would be to cancel the ConsetIDs already used, so if someone gets a ConsentID from one through leaks, they would not be able to access the account</br>
 
