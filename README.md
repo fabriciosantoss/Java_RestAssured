@@ -2,7 +2,7 @@
 
 Hello folks, find below how you can setup and execute the project
 
-<h1>Eviroment</h1>
+<h1>Environment</h1>
 First of all, to build and run my project, you should have following tools installed:</p>
 <p>Java 17 Amazon Coretto</p>
 <p>Maven</p>
