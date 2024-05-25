@@ -22,7 +22,7 @@ You could add more informations about the API, for exemple insert the complete e
   - The Wrong path of the account's endpoint-> the correct account's endpoint is "account/v1/accounts" but in the documentatios is mentioned "accounts", This is a bug with priority medium, because this is more easy and simple to be resolved </br>
 
 <h3>Functionality</h3> 
-- Error 500 when i use one expired date -> When i use a consetID with a expired date to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID
+- Error 500 when i use one expired date -> When i use a consetID with a expired date to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID, this is a bug with high priority, because its occurring a crash
 
 <br>- Error 500 when i use consent with status rejected-> When i use a consetID with the rejected status to acess the accounts API, is returning status code 500, because the api is receving a null point. We could insert the same message that is shwoed in the consent api "Consent Id not present on the request" when we dont have a consentID</br>
 
