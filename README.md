@@ -1,4 +1,4 @@
-# Radiam Task
+# Raidiam Task
 
 Hello folks, find below how you can setup and execute the project
 
