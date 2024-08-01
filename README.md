@@ -1,4 +1,4 @@
-# Raidiam Task
+#Task
 
 Hello folks, find below how you can setup and execute the project
 
@@ -13,8 +13,6 @@ For running the tests you will need execute local in your computer, the project 
 
 In the project have a file to CI/CD, but how it is running local, its not working yet.
 
-<h1>API Documentation</h1>
-You could add more informations about the API, for exemple insert the complete endpoint, the correct account's endpoint is "account/v1/accounts" but in the documentatios is mentioned "accounts", so in the first view is a little bite confuse.
 
 <h1>Bugs</h1>
 
